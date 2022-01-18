@@ -33,6 +33,8 @@ async function run() {
     // get "slug" from the URL, if slug is present then see if we already have an avaialble org for that slug, otherwise get a fresh one
     const slug = req.query.slug;
     const username = orgs[slug];
+    console.log(orgs, slug, username);
+
     if (!username) {
       res.writeHead(404);
       return res.end();
@@ -42,6 +44,7 @@ async function run() {
 
   app.post("/api/v1/org", async function (req, res) {
     orgs[req.body.slug] = req.body.username;
+    console.log(orgs);
     res.json(req.body);
   });
 
