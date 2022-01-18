@@ -1,0 +1,120 @@
+html,
+body {
+  background: #282c34;
+  height: 100%;
+  width: 100%;
+  margin: 0px;
+  padding: 0px;
+  color: white;
+}
+a {
+  color: #faf;
+}
+.App {
+  text-align: center;
+}
+
+.App-logo {
+  height: 40vmin;
+  pointer-events: none;
+}
+
+@media (prefers-reduced-motion: no-preference) {
+  .App-logo {
+    animation: App-logo-spin infinite 20s linear;
+  }
+}
+
+.content-main {
+  background-color: #282c34;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  font-size: calc(10px + 2vmin);
+  color: white;
+}
+
+.App-link {
+  color: #61dafb;
+}
+
+@keyframes App-logo-spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+.character-sheet {
+  color: black;
+}
+
+.game-header {
+  position: relative;
+}
+.game-header-actions {
+  background-color: white;
+  color: black;
+  position: absolute;
+  left: 0px;
+  top: 10px;
+}
+.game-header span {
+  margin: 20px;
+}
+/** Arena Component **/
+.challenge {
+  width: 100%;
+  height: 100%;
+  color: black;
+}
+.challenge > * {
+  margin: auto;
+  text-align: center;
+}
+.challenge-body {
+  width: 100%;
+  display: flex;
+}
+.page-error {
+  display: inline-block;
+  background: red;
+  margin-top: 2rem;
+  padding: 0.7rem;
+  font-size: 0.7em;
+  border-radius: 1em;
+}
+.dxInstructions {
+  font-size: 0.5em;
+}
+.App table {
+  font-size: 0.5em;
+}
+.App table td {
+  padding: 0px 1em;
+}
+.admin table {
+  font-size: 0.5em;
+  width: 90vw;
+}
+.react-tabs {
+  width: 90vw;
+}
+
+.admin table td {
+  padding-left: 1em;
+}
+.admin a {
+  font-size: 0.5em;
+}
+pre {
+  background: #8c8c8c;
+  border-radius: 3px;
+  padding: 0.5em;
+}
+.org-open li {
+  list-style-type: none;
+}
