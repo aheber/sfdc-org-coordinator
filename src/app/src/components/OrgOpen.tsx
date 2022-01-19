@@ -26,6 +26,8 @@ export default function Admin() {
       <ul>
         <li>
           <a href={orgUrls.admin.core}>Core - Setup</a>
+        </li>
+        <li>
           <a
             href={
               orgUrls.admin.core + "&retURL=%2Flightning%2Fn%2FProduct_Explorer"
