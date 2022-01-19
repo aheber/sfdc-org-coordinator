@@ -25,7 +25,14 @@ export default function Admin() {
       <div>Open org as admin</div>
       <ul>
         <li>
-          <a href={orgUrls.admin.core}>Core</a>
+          <a href={orgUrls.admin.core}>Core - Setup</a>
+          <a
+            href={
+              orgUrls.admin.core + "&retURL=%2Flightning%2Fn%2FProduct_Explorer"
+            }
+          >
+            Core - E-Bikes
+          </a>
         </li>
         <li>
           <a href={orgUrls.admin.comms["E-Bikes"]}>E-Bikes</a>
